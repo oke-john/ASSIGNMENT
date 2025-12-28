@@ -16,7 +16,7 @@ if income < 0:
 
 tax = 0.0
 
-# ---- SINGLE FILER ----
+#  SINGLE FILER 
 if status == 0:
     if income > 372950:
         tax += (income - 372950) * 0.35
@@ -37,7 +37,7 @@ if status == 0:
     tax += income * 0.10
 
 
-# ---- MARRIED FILING JOINTLY / WIDOW ----
+# MARRIED FILING / WIDOW
 elif status == 1:
     if income > 372950:
         tax += (income - 372950) * 0.35
@@ -58,7 +58,7 @@ elif status == 1:
     tax += income * 0.10
 
 
-# ---- MARRIED FILING SEPARATELY ----
+# MARRIED FILING
 elif status == 2:
     if income > 186475:
         tax += (income - 186475) * 0.35
@@ -101,3 +101,4 @@ elif status == 3:
 
 
 print(f"Total tax owed: ${tax:.2f}")
+
