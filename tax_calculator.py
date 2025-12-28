@@ -1,3 +1,11 @@
+# ============================================
+# Tax Calculator Assignment
+# Calculates personal income tax based on filing status and progressive tax brackets
+# NAME:OKE PROMISE JOHN
+# MATRIC NO:BU24SEN1068
+# ============================================
+
+
 print("Filing Status:")
 print("0 → Single filer")
 print("1 → Married filing jointly / Qualified widow(er)")
@@ -79,7 +87,7 @@ elif status == 2:
     tax += income * 0.10
 
 
-# ---- HEAD OF HOUSEHOLD ----
+# HEAD OF HOUSEHOLD 
 elif status == 3:
     if income > 372950:
         tax += (income - 372950) * 0.35
@@ -101,5 +109,6 @@ elif status == 3:
 
 
 print(f"Total tax owed: ${tax:.2f}")
+
 
 
